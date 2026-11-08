@@ -1,0 +1,17 @@
+sources:
+  - source_id: pollack_78_degrees
+    enabled: true
+    title: Seventy-Eight Degrees of Wisdom
+    author: Rachel Pollack
+    collection: tarot_bge_m3_v1
+    chunks_path: data/chunks/tarot_chunks.jsonl
+    exact_provider: pollack_meanings
+    source_weight: 1.0
+  - source_id: greer_tarot_reversals
+    enabled: true
+    title: The Complete Book of Tarot Reversals
+    author: Mary K. Greer
+    collection: tarot_greer_reversals_bge_m3_v1
+    chunks_path: data/chunks/greer_tarot_reversals_chunks.jsonl
+    exact_provider: greer_chunks
+    source_weight: 1.0

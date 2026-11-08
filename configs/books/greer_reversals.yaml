@@ -1,0 +1,36 @@
+source_id: greer_tarot_reversals
+title: The Complete Book of Tarot Reversals
+author: Mary K. Greer
+parser: greer_reversals
+pdf_path: data/raw/The complete book of tarot reversals.pdf
+collection: tarot_greer_reversals_bge_m3_v1
+embedding_model: BAAI/bge-m3
+embedding_dimension: 1024
+printed_page_offset: -14
+outputs:
+  pages: data/extracted/greer_tarot_reversals_pages.jsonl
+  sections: data/structured/greer_tarot_reversals_sections.json
+  chunks: data/chunks/greer_tarot_reversals_chunks.jsonl
+  boundary_report: reports/rag/greer_reversals_boundaries.md
+  index_log: reports/rag/greer_reversals_index_log.jsonl
+card_interpretation_range:
+  start_pdf_page: 54
+  end_pdf_page: 225
+  end_boundary_pdf_page: 227
+card_end_markers:
+  the_world: {pdf_page: 109, line_pattern: '^ENDNOTES$', end_at_page_start: true}
+  ten_of_pentacles: {pdf_page: 192, line_pattern: '^ENDNOTES$', end_at_page_start: true}
+general_sections:
+  - {id: introduction, title: Introduction - About This Book, start_pdf_page: 15, end_pdf_page: 26, section_type: methodology}
+  - {id: different_point_of_view, title: Chapter One - A Different Point of View, start_pdf_page: 27, end_pdf_page: 38, section_type: methodology}
+  - {id: using_reversals, title: Chapter Two - Using Reversals, start_pdf_page: 39, end_pdf_page: 51, section_type: methodology}
+  - {id: spreads, title: Chapter Three - Spreads, start_pdf_page: 227, end_pdf_page: 242, section_type: practice}
+  - {id: reading_for_sarah, title: Chapter Four - Reading for Sarah, start_pdf_page: 243, end_pdf_page: 256, section_type: example}
+  - {id: reversed_keywords, title: Appendix A - Reversed Keywords, start_pdf_page: 257, end_pdf_page: 260, section_type: reference}
+  - {id: suit_number_keywords, title: Appendix B - Suit and Number Keywords, start_pdf_page: 261, end_pdf_page: 264, section_type: reference}
+  - {id: elemental_dignities, title: Appendix C - Elemental Dignities, start_pdf_page: 265, end_pdf_page: 268, section_type: methodology}
+  - {id: heroines_journey, title: Appendix D - The Heroine's Journey, start_pdf_page: 269, end_pdf_page: 274, section_type: methodology}
+chunking:
+  max_chars: 2400
+  min_chars: 120
+  overlap_paragraphs: 1

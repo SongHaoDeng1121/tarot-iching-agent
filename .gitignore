@@ -1,0 +1,37 @@
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+.streamlit/secrets.toml
+
+data/readings/
+output/
+archive/
+*.backup.py
+*.before_*.py
+
+data/raw/
+data/extracted/
+storage/chroma/
+
+*.log
+
+# Private book-derived knowledge
+data/chunks/
+data/structured/
+data/spreads/
+
+# Evaluation reports and temporary files
+reports/rag/
+tmp/
+
+# Local backup files
+web_app.before_*.py
+rag/*.before_*.py
