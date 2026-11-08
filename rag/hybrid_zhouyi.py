@@ -3,12 +3,13 @@ import json
 import re
 import argparse
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 from rag.exact_zhouyi import detect_hexagram, detect_line
 from rag.search_zhouyi import search_zhouyi
 
 ROOT = Path(__file__).resolve().parents[1]
-CHUNKS_FILE = ROOT / "data/chunks/zhouyi_index_ready.jsonl"
+CHUNKS_FILE = knowledge_path("data/chunks/zhouyi_index_ready.jsonl")
 
 
 def normalize(text):

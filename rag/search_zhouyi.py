@@ -5,6 +5,7 @@ from pathlib import Path
 import chromadb
 from dotenv import load_dotenv
 from openai import OpenAI
+from rag.runtime_data import chroma_path
 
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
@@ -20,7 +21,7 @@ api = OpenAI(
 )
 
 db = chromadb.PersistentClient(
-    path=str(ROOT / "storage/chroma")
+    path=str(chroma_path())
 )
 
 collection = db.get_collection(

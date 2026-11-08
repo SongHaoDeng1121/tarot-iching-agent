@@ -6,11 +6,12 @@ import json
 import re
 import argparse
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 from engines.hexagram_utils import HEXAGRAM_NAMES
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES_FILE = ROOT / "data/extracted/zhouyi_pages.jsonl"
+PAGES_FILE = knowledge_path("data/extracted/zhouyi_pages.jsonl")
 
 LINE_LABELS = (
     "初九", "初六", "九二", "六二",

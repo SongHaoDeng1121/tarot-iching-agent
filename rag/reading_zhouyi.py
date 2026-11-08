@@ -340,6 +340,7 @@ def run_reading(
     question,
     line_values=None,
     dry_run=False,
+    save=True,
 ):
     """
     Exact RAG reading pipeline.
@@ -400,7 +401,7 @@ def run_reading(
 
     # Save only completed readings.
     # Dry-run does not overwrite the latest answer.
-    if not dry_run:
+    if not dry_run and save:
         save_reading_record(result)
 
     return result

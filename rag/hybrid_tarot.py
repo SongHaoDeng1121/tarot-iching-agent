@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 from rag.tarot_sources import load_source_chunks, load_source_registry
+from rag.runtime_data import chroma_path
 
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
@@ -146,7 +147,7 @@ def _local_rankings(
 def _vector_ranking(
     query_vector: list[float], card_id: str, per_collection: int = 6
 ) -> list[dict[str, Any]]:
-    db = chromadb.PersistentClient(path=str(ROOT / "storage/chroma"))
+    db = chromadb.PersistentClient(path=str(chroma_path()))
     available = {collection.name for collection in db.list_collections()}
     output: list[dict[str, Any]] = []
     for source in load_source_registry():

@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from rag.runtime_data import knowledge_path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_REGISTRY = ROOT / "configs/tarot_sources.yaml"
@@ -28,7 +29,7 @@ def load_source_registry(path: str | None = None) -> list[dict[str, Any]]:
 def load_source_chunks(path: str) -> list[dict[str, Any]]:
     chunk_path = Path(path)
     if not chunk_path.is_absolute():
-        chunk_path = ROOT / chunk_path
+        chunk_path = knowledge_path(path)
     if not chunk_path.exists():
         return []
     return [

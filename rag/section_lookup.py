@@ -1,11 +1,12 @@
 
 import json
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-INDEX_FILE = ROOT / "data/structured/tarot_sections.json"
-PAGES_FILE = ROOT / "data/extracted/tarot_pages.jsonl"
+INDEX_FILE = knowledge_path("data/structured/tarot_sections.json")
+PAGES_FILE = knowledge_path("data/extracted/tarot_pages.jsonl")
 
 
 def get_card_section(card_id):

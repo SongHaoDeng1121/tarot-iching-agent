@@ -4,12 +4,11 @@
 import json
 import secrets
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-KNOWLEDGE_FILE = (
-    ROOT / "data/structured/tarot_meanings.json"
-)
+KNOWLEDGE_FILE = knowledge_path("data/structured/tarot_meanings.json")
 
 DEFAULT_POSITIONS = ["现状", "阻碍", "建议"]
 

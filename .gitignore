@@ -35,3 +35,17 @@ tmp/
 # Local backup files
 web_app.before_*.py
 rag/*.before_*.py
+
+# Private deployment bundles and caches
+*.tar.gz
+*.tgz
+*.zip
+private-knowledge/
+.private-knowledge/
+.runtime/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# GitHub Actions workflow - upload after workflow permission is granted
+.github/workflows/linux-smoke.yml

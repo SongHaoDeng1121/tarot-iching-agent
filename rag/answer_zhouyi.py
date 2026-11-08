@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -29,9 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 load_dotenv(ROOT / ".env")
 
-PAGES_FILE = (
-    ROOT / "data/extracted/zhouyi_pages.jsonl"
-)
+PAGES_FILE = knowledge_path("data/extracted/zhouyi_pages.jsonl")
 
 SOURCE_NAME = "杨天才、张善文译注《周易》"
 

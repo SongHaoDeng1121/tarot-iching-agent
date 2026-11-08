@@ -3,11 +3,12 @@ import json
 import re
 import argparse
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PAGES_PATH = ROOT / "data/extracted/zhouyi_pages.jsonl"
-SECTIONS_PATH = ROOT / "data/structured/zhouyi_sections.json"
+PAGES_PATH = knowledge_path("data/extracted/zhouyi_pages.jsonl")
+SECTIONS_PATH = knowledge_path("data/structured/zhouyi_sections.json")
 
 
 def load_jsonl(path):

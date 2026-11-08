@@ -6,6 +6,7 @@ import json
 import os
 import re
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -13,7 +14,7 @@ from openai import OpenAI
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
-MEANINGS_FILE = ROOT / "data/structured/tarot_meanings.json"
+MEANINGS_FILE = knowledge_path("data/structured/tarot_meanings.json")
 
 # ------------------------------
 # 1. Card name dictionary

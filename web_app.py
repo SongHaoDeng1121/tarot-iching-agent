@@ -10,6 +10,14 @@ import re
 
 import streamlit as st
 
+st.set_page_config(
+    page_title="Tarot × I Ching", page_icon="📖", layout="wide",
+    initial_sidebar_state="expanded",
+)
+from rag.app_bootstrap import initialize, history_dir
+from rag.cloud_access import operation_budget
+initialize(st)
+
 from engines.tarot_draw import make_three_card_spread
 from engines.yijing_cast import cast_hexagram, build_cast_result
 from engines.yijing_line_rules import format_line_analysis
@@ -27,8 +35,8 @@ from rag.spread import (
 )
 
 ROOT = Path(__file__).resolve().parent
-HISTORY_DIR = ROOT / "data" / "readings"
-HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+# This module is rerun per session; do not cache user records globally.
+HISTORY_DIR = history_dir(st)
 
 ORIENTATION_ZH = {
     "upright": "正位",
@@ -166,13 +174,6 @@ Chunk
 # --------------------------------------------------
 # Page configuration
 # --------------------------------------------------
-
-st.set_page_config(
-    page_title="Tarot × I Ching",
-    page_icon="📖",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 st.markdown("""
 <style>
@@ -575,6 +576,7 @@ def generate_joint(record, mode):
         question=question,
         line_values=cast["line_values_bottom_to_top"],
         dry_run=False,
+        save=False,
     )
     # Detect any accidental changes in the I Ching pipeline.
     if yijing["cast"]["line_values_bottom_to_top"] != cast["line_values_bottom_to_top"]:
@@ -614,7 +616,10 @@ def persist_followup(record, turn):
         raise ValueError("当前记录还未完成保存，不能写入追问。")
 
     updated = {**record, "followups": [*(record.get("followups") or []), turn]}
-    target = HISTORY_DIR / (str(record["id"]) + ".json")
+    record_id = str(record["id"])
+    if not re.fullmatch(r"[A-Za-z0-9_]+", record_id):
+        raise ValueError("无效的历史记录编号。")
+    target = HISTORY_DIR / (record_id + ".json")
     if not target.is_file():
         raise FileNotFoundError(f"未找到本次历史记录：{target.name}")
 
@@ -655,7 +660,10 @@ def render_followups(record):
         else:
             try:
                 with st.spinner("正在结合本次牌阵和前面的对话回答..."):
-                    turn = answer_followup(record, followup.strip())
+                    if len(followup) > 2000:
+                        raise ValueError("追问请控制在2000字以内。")
+                    with operation_budget(st.session_state["_history_session"], 2):
+                        turn = answer_followup(record, followup.strip())
                     updated = persist_followup(record, turn)
                 st.session_state[STATE_KEY] = updated
                 st.rerun()
@@ -749,6 +757,7 @@ with st.sidebar:
     st.caption(RETRIEVAL_MODES[retrieval_mode]["description"])
     st.divider()
     st.subheader("历史记录")
+    st.caption("仅显示当前会话的记录；断开会话或云端重启后可能无法恢复，请及时导出。")
     files = combined_history()
     if files:
         selected = st.selectbox("已保存的记录", files, format_func=lambda p: p.stem)
@@ -785,7 +794,7 @@ st.divider()
 st.subheader("1. 提出问题")
 st.text_area(
     "希望通过这次联合解读探讨什么？",
-    key="question_input", height=125,
+    key="question_input", height=125, max_chars=2000,
     placeholder="例如：我目前遇到的困难，应该如何调整行动方式？",
 )
 
@@ -826,7 +835,8 @@ if record:
         if st.button("开始双系统解读与 Fusion 综合分析", type="primary", use_container_width=True):
             try:
                 with st.spinner("正在分别检索两套文献、生成解读与交叉分析..."):
-                    complete = generate_joint(record, retrieval_mode)
+                    with operation_budget(st.session_state["_history_session"], 8):
+                        complete = generate_joint(record, retrieval_mode)
                     complete = persist_joint_record(complete)
                 st.session_state[STATE_KEY] = complete
                 st.rerun()

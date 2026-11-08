@@ -1,15 +1,11 @@
 
 import json
 from pathlib import Path
+from rag.runtime_data import knowledge_path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-DATA_PATH = (
-    PROJECT_ROOT
-    / "data"
-    / "structured"
-    / "hexagrams.json"
-)
+DATA_PATH = knowledge_path("data/structured/hexagrams.json")
 
 
 def load_hexagrams():
