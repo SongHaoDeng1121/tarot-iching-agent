@@ -10,6 +10,8 @@ SETTINGS = (
     "KNOWLEDGE_BUNDLE_TOKEN", "KNOWLEDGE_CACHE_DIR", "APP_RUNTIME_DIR",
     "APP_ACCESS_PASSWORD", "API_GLOBAL_DAILY_UNITS", "API_SESSION_DAILY_UNITS",
     "API_COOLDOWN_SECONDS", "API_MAX_CONCURRENT", "TAROT_SOURCE_REGISTRY",
+    "KNOWLEDGE_GITHUB_REPOSITORY", "KNOWLEDGE_GITHUB_REF",
+    "KNOWLEDGE_GITHUB_PATH", "KNOWLEDGE_GITHUB_TOKEN",
 )
 
 
@@ -23,7 +25,7 @@ def initialize(st):
     cloud = os.getenv("APP_MODE", "local") == "cloud"
     if cloud:
         os.environ.setdefault("APP_RUNTIME_DIR", "/tmp/tarot-private-runtime")
-        if not os.getenv("KNOWLEDGE_ROOT") and not os.getenv("KNOWLEDGE_BUNDLE_URL"):
+        if not any(os.getenv(key) for key in ("KNOWLEDGE_ROOT", "KNOWLEDGE_BUNDLE_URL", "KNOWLEDGE_GITHUB_REPOSITORY")):
             st.error("尚未配置私有知识数据源，应用未启动。")
             st.stop()
     from rag.cloud_access import require_cloud_access
@@ -40,8 +42,10 @@ def initialize(st):
 
     try:
         result = prepare()
-    except Exception:
-        st.error("私有知识数据加载失败，请管理员检查数据包、校验值及访问凭证。")
+    except Exception as exc:
+        from rag.private_bundle import PrivateDataError
+        message = str(exc) if isinstance(exc, PrivateDataError) else "请管理员检查数据包、校验值及访问凭证。"
+        st.error("私有知识数据加载失败：" + message)
         st.stop()
     if not result["ready"]:
         st.error("知识库尚未就绪，应用已停止。")

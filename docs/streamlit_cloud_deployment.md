@@ -1,5 +1,7 @@
 # Streamlit Community Cloud 部署
 
+**2026-11-09 更新：** 当前缺失私有数据的修复采用完整 Chroma 目录快照 v2，通过独立私有 GitHub 仓库下载，避免重建集合。请优先使用 `reports/deployment/streamlit_private_data_fix.md` 中的新步骤和 Secrets；下文的向量导出 v1 仅作为旧方案保留，不用于本次修复。
+
 部署入口使用 `cloud_app.py`，在 Advanced settings 中明确选择 **Python 3.12**。本地仍可运行 `streamlit run web_app.py`，知识目录默认保持项目原有布局。
 
 本文说明部署适配；完成代码测试不等于云端已经部署。未上传知识数据、未替用户配置 Cloud Secrets，也未部署公开应用。
