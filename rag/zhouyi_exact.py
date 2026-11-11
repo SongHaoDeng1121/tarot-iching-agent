@@ -9,6 +9,7 @@ from pathlib import Path
 from rag.runtime_data import knowledge_path
 
 from engines.hexagram_utils import HEXAGRAM_NAMES
+from rag.zhouyi_boundaries import resolve_boundaries
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES_FILE = knowledge_path("data/extracted/zhouyi_pages.jsonl")
@@ -35,7 +36,8 @@ def load_pages():
 
 def find_chapter_heading(pages, name):
     """
-    Locate a hexagram chapter heading in OCR text.
+    Legacy strict detector retained for diagnostic baseline comparisons.
+    Production get_chapter() uses corroborated structured/OCR boundaries.
 
     Accept examples such as:
         中孚（ ）
@@ -97,10 +99,9 @@ def find_chapter_heading(pages, name):
     )
 
 
-def get_chapter(pages, number):
+def get_chapter(pages, number, sections=None):
     """
-    Locate a chapter using its heading and
-    the next King Wen hexagram heading.
+    Resolve corroborated structured/OCR offsets, including appendix termination.
 
     Return page-aware segments.
     """
@@ -108,20 +109,9 @@ def get_chapter(pages, number):
         raise ValueError("Hexagram number must be 1-64")
 
     name = HEXAGRAM_NAMES[number - 1]
-    start_page, start_offset = find_chapter_heading(
-        pages, name
-    )
-
-    if number < 64:
-        next_name = HEXAGRAM_NAMES[number]
-        end_page, end_offset = find_chapter_heading(
-            pages, next_name
-        )
-    else:
-        # Do not guess where the final chapter ends.
-        raise ValueError(
-            "Hexagram 64 requires a verified end boundary."
-        )
+    boundaries = resolve_boundaries(pages, number, sections)
+    start_page, start_offset = boundaries["start"]["pdf_page"], boundaries["start"]["offset"]
+    end_page, end_offset = boundaries["end_exclusive"]["pdf_page"], boundaries["end_exclusive"]["offset"]
 
     if (end_page, end_offset) <= (start_page, start_offset):
         raise ValueError(
@@ -153,6 +143,7 @@ def get_chapter(pages, number):
         "number": number,
         "name": name,
         "segments": segments,
+        "boundaries": boundaries,
     }
 
 

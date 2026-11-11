@@ -1,0 +1,2033 @@
+{
+  "legacy_passed": 57,
+  "passed": 64,
+  "total": 64,
+  "observed_cast": {
+    "values": [
+      8,
+      8,
+      6,
+      8,
+      7,
+      7
+    ],
+    "original": 20,
+    "changed": 53,
+    "moving": [
+      "六三"
+    ]
+  },
+  "observed_evidence": [
+    {
+      "type": "original_hexagram",
+      "name": "观",
+      "pages": [
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216
+      ]
+    },
+    {
+      "type": "moving_line",
+      "name": "观·六三",
+      "pages": [
+        214,
+        215
+      ]
+    },
+    {
+      "type": "changed_hexagram",
+      "name": "渐",
+      "pages": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "乾",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 21,
+          "offset": 17,
+          "method": "recorded_ocr_title_tijie_references_and_judgement"
+        },
+        "end_exclusive": {
+          "pdf_page": 45,
+          "offset": 576,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "坤"
+      },
+      "pages": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "number": 2,
+      "name": "坤",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 45,
+          "offset": 576,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 64,
+          "offset": 119,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "屯"
+      },
+      "pages": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "number": 3,
+      "name": "屯",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 64,
+          "offset": 119,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 73,
+          "offset": 153,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "蒙"
+      },
+      "pages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "number": 4,
+      "name": "蒙",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 73,
+          "offset": 153,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 82,
+          "offset": 188,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "需"
+      },
+      "pages": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "number": 5,
+      "name": "需",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 82,
+          "offset": 188,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 91,
+          "offset": 194,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "讼"
+      },
+      "pages": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "number": 6,
+      "name": "讼",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 91,
+          "offset": 194,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 100,
+          "offset": 236,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "师"
+      },
+      "pages": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "number": 7,
+      "name": "师",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 100,
+          "offset": 236,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 109,
+          "offset": 276,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "比"
+      },
+      "pages": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "number": 8,
+      "name": "比",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 109,
+          "offset": 276,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 117,
+          "offset": 375,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "小畜"
+      },
+      "pages": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "number": 9,
+      "name": "小畜",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 117,
+          "offset": 375,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 126,
+          "offset": 502,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "履"
+      },
+      "pages": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ]
+    },
+    {
+      "number": 10,
+      "name": "履",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 126,
+          "offset": 502,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 135,
+          "offset": 228,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "泰"
+      },
+      "pages": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135
+      ]
+    },
+    {
+      "number": 11,
+      "name": "泰",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 135,
+          "offset": 228,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 145,
+          "offset": 70,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "否"
+      },
+      "pages": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "number": 12,
+      "name": "否",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 145,
+          "offset": 70,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 153,
+          "offset": 333,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "同人"
+      },
+      "pages": [
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ]
+    },
+    {
+      "number": 13,
+      "name": "同人",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 153,
+          "offset": 333,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 161,
+          "offset": 435,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "大有"
+      },
+      "pages": [
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ]
+    },
+    {
+      "number": 14,
+      "name": "大有",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 161,
+          "offset": 435,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 168,
+          "offset": 389,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "谦"
+      },
+      "pages": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168
+      ]
+    },
+    {
+      "number": 15,
+      "name": "谦",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 168,
+          "offset": 389,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 176,
+          "offset": 422,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "豫"
+      },
+      "pages": [
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176
+      ]
+    },
+    {
+      "number": 16,
+      "name": "豫",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 176,
+          "offset": 422,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 185,
+          "offset": 461,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "随"
+      },
+      "pages": [
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185
+      ]
+    },
+    {
+      "number": 17,
+      "name": "随",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 185,
+          "offset": 461,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 193,
+          "offset": 619,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "蛊"
+      },
+      "pages": [
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193
+      ]
+    },
+    {
+      "number": 18,
+      "name": "蛊",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 193,
+          "offset": 619,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 201,
+          "offset": 512,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "临"
+      },
+      "pages": [
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201
+      ]
+    },
+    {
+      "number": 19,
+      "name": "临",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 201,
+          "offset": 512,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 209,
+          "offset": 335,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "观"
+      },
+      "pages": [
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209
+      ]
+    },
+    {
+      "number": 20,
+      "name": "观",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 209,
+          "offset": 335,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 218,
+          "offset": 222,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "噬嗑"
+      },
+      "pages": [
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218
+      ]
+    },
+    {
+      "number": 21,
+      "name": "噬嗑",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 218,
+          "offset": 222,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 226,
+          "offset": 448,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "贲"
+      },
+      "pages": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226
+      ]
+    },
+    {
+      "number": 22,
+      "name": "贲",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 226,
+          "offset": 448,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 235,
+          "offset": 244,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "剥"
+      },
+      "pages": [
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
+      ]
+    },
+    {
+      "number": 23,
+      "name": "剥",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 235,
+          "offset": 244,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 244,
+          "offset": 106,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "复"
+      },
+      "pages": [
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244
+      ]
+    },
+    {
+      "number": 24,
+      "name": "复",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《无妄》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 244,
+          "offset": 106,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 252,
+          "offset": 562,
+          "method": "recorded_ocr_title_tijie_references_and_judgement"
+        },
+        "end_boundary_name": "无妄"
+      },
+      "pages": [
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252
+      ]
+    },
+    {
+      "number": 25,
+      "name": "无妄",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《无妄》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 252,
+          "offset": 562,
+          "method": "recorded_ocr_title_tijie_references_and_judgement"
+        },
+        "end_exclusive": {
+          "pdf_page": 261,
+          "offset": 51,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "大畜"
+      },
+      "pages": [
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ]
+    },
+    {
+      "number": 26,
+      "name": "大畜",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 261,
+          "offset": 51,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 269,
+          "offset": 75,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "颐"
+      },
+      "pages": [
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269
+      ]
+    },
+    {
+      "number": 27,
+      "name": "颐",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 269,
+          "offset": 75,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 276,
+          "offset": 417,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "大过"
+      },
+      "pages": [
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276
+      ]
+    },
+    {
+      "number": 28,
+      "name": "大过",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 276,
+          "offset": 417,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 285,
+          "offset": 319,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "坎"
+      },
+      "pages": [
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285
+      ]
+    },
+    {
+      "number": 29,
+      "name": "坎",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 285,
+          "offset": 319,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 293,
+          "offset": 441,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "离"
+      },
+      "pages": [
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293
+      ]
+    },
+    {
+      "number": 30,
+      "name": "离",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 293,
+          "offset": 441,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 301,
+          "offset": 17,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "咸"
+      },
+      "pages": [
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301
+      ]
+    },
+    {
+      "number": 31,
+      "name": "咸",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 301,
+          "offset": 17,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 310,
+          "offset": 200,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "恒"
+      },
+      "pages": [
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310
+      ]
+    },
+    {
+      "number": 32,
+      "name": "恒",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《遯》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 310,
+          "offset": 200,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 318,
+          "offset": 22,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "遁"
+      },
+      "pages": [
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318
+      ]
+    },
+    {
+      "number": 33,
+      "name": "遯",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《遯》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 318,
+          "offset": 22,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 326,
+          "offset": 475,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "大壮"
+      },
+      "pages": [
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326
+      ]
+    },
+    {
+      "number": 34,
+      "name": "大壮",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 326,
+          "offset": 475,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 334,
+          "offset": 305,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "晋"
+      },
+      "pages": [
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334
+      ]
+    },
+    {
+      "number": 35,
+      "name": "晋",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 334,
+          "offset": 305,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 342,
+          "offset": 265,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "明夷"
+      },
+      "pages": [
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342
+      ]
+    },
+    {
+      "number": 36,
+      "name": "明夷",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 342,
+          "offset": 265,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 350,
+          "offset": 310,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "家人"
+      },
+      "pages": [
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350
+      ]
+    },
+    {
+      "number": 37,
+      "name": "家人",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 350,
+          "offset": 310,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 358,
+          "offset": 110,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "睽"
+      },
+      "pages": [
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358
+      ]
+    },
+    {
+      "number": 38,
+      "name": "睽",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 358,
+          "offset": 110,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 367,
+          "offset": 312,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "蹇"
+      },
+      "pages": [
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367
+      ]
+    },
+    {
+      "number": 39,
+      "name": "蹇",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 367,
+          "offset": 312,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 375,
+          "offset": 228,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "解"
+      },
+      "pages": [
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375
+      ]
+    },
+    {
+      "number": 40,
+      "name": "解",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 375,
+          "offset": 228,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 383,
+          "offset": 120,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "损"
+      },
+      "pages": [
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383
+      ]
+    },
+    {
+      "number": 41,
+      "name": "损",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 383,
+          "offset": 120,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 391,
+          "offset": 169,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "益"
+      },
+      "pages": [
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391
+      ]
+    },
+    {
+      "number": 42,
+      "name": "益",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 391,
+          "offset": 169,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 399,
+          "offset": 387,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "夬"
+      },
+      "pages": [
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399
+      ]
+    },
+    {
+      "number": 43,
+      "name": "夬",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 399,
+          "offset": 387,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 407,
+          "offset": 335,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "姤"
+      },
+      "pages": [
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "number": 44,
+      "name": "姤",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 407,
+          "offset": 335,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 415,
+          "offset": 347,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "萃"
+      },
+      "pages": [
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415
+      ]
+    },
+    {
+      "number": 45,
+      "name": "萃",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 415,
+          "offset": 347,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 423,
+          "offset": 508,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "升"
+      },
+      "pages": [
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423
+      ]
+    },
+    {
+      "number": 46,
+      "name": "升",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 423,
+          "offset": 508,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 431,
+          "offset": 284,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "困"
+      },
+      "pages": [
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431
+      ]
+    },
+    {
+      "number": 47,
+      "name": "困",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 431,
+          "offset": 284,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 440,
+          "offset": 342,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "井"
+      },
+      "pages": [
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440
+      ]
+    },
+    {
+      "number": 48,
+      "name": "井",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 440,
+          "offset": 342,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 448,
+          "offset": 285,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "革"
+      },
+      "pages": [
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448
+      ]
+    },
+    {
+      "number": 49,
+      "name": "革",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 448,
+          "offset": 285,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 456,
+          "offset": 498,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "鼎"
+      },
+      "pages": [
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456
+      ]
+    },
+    {
+      "number": 50,
+      "name": "鼎",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 456,
+          "offset": 498,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 464,
+          "offset": 427,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "震"
+      },
+      "pages": [
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464
+      ]
+    },
+    {
+      "number": 51,
+      "name": "震",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 464,
+          "offset": 427,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 473,
+          "offset": 88,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "艮"
+      },
+      "pages": [
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473
+      ]
+    },
+    {
+      "number": 52,
+      "name": "艮",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 473,
+          "offset": 88,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 480,
+          "offset": 255,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "渐"
+      },
+      "pages": [
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480
+      ]
+    },
+    {
+      "number": 53,
+      "name": "渐",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《归妹》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 480,
+          "offset": 255,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 489,
+          "offset": 160,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "归妹"
+      },
+      "pages": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489
+      ]
+    },
+    {
+      "number": 54,
+      "name": "归妹",
+      "legacy_passed": false,
+      "legacy_error": "无法定位《归妹》章首：OCR标题可能有错字或题解标记缺失。请运行章节诊断脚本。",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 489,
+          "offset": 160,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 497,
+          "offset": 301,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "丰"
+      },
+      "pages": [
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497
+      ]
+    },
+    {
+      "number": 55,
+      "name": "丰",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 497,
+          "offset": 301,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 505,
+          "offset": 565,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "旅"
+      },
+      "pages": [
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505
+      ]
+    },
+    {
+      "number": 56,
+      "name": "旅",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 505,
+          "offset": 565,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 513,
+          "offset": 414,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "巽"
+      },
+      "pages": [
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513
+      ]
+    },
+    {
+      "number": 57,
+      "name": "巽",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 513,
+          "offset": 414,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 521,
+          "offset": 482,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "兑"
+      },
+      "pages": [
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521
+      ]
+    },
+    {
+      "number": 58,
+      "name": "兑",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 521,
+          "offset": 482,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 529,
+          "offset": 126,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "涣"
+      },
+      "pages": [
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529
+      ]
+    },
+    {
+      "number": 59,
+      "name": "涣",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 529,
+          "offset": 126,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 536,
+          "offset": 468,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "节"
+      },
+      "pages": [
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536
+      ]
+    },
+    {
+      "number": 60,
+      "name": "节",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 536,
+          "offset": 468,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 544,
+          "offset": 114,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "中孚"
+      },
+      "pages": [
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544
+      ]
+    },
+    {
+      "number": 61,
+      "name": "中孚",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 544,
+          "offset": 114,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 552,
+          "offset": 461,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "小过"
+      },
+      "pages": [
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552
+      ]
+    },
+    {
+      "number": 62,
+      "name": "小过",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 552,
+          "offset": 461,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 562,
+          "offset": 492,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "既济"
+      },
+      "pages": [
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562
+      ]
+    },
+    {
+      "number": 63,
+      "name": "既济",
+      "legacy_passed": true,
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 562,
+          "offset": 492,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 571,
+          "offset": 198,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_boundary_name": "未济"
+      },
+      "pages": [
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571
+      ]
+    },
+    {
+      "number": 64,
+      "name": "未济",
+      "legacy_passed": false,
+      "legacy_error": "Hexagram 64 requires a verified end boundary.",
+      "passed": true,
+      "boundaries": {
+        "start": {
+          "pdf_page": 571,
+          "offset": 198,
+          "method": "indexed_page_title_and_tijie_context"
+        },
+        "end_exclusive": {
+          "pdf_page": 580,
+          "offset": 0,
+          "method": "indexed_page_title_and_tijie"
+        },
+        "end_boundary_name": "系辞上传"
+      },
+      "pages": [
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579
+      ]
+    }
+  ]
+}

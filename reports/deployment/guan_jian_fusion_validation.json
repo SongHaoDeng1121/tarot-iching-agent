@@ -1,0 +1,363 @@
+{
+  "online": true,
+  "workflow": "web_app.generate_joint -> Tarot + I Ching -> Fusion",
+  "cast": {
+    "original": 20,
+    "changed": 53,
+    "moving": [
+      "六三"
+    ]
+  },
+  "tarot_sources": [
+    {
+      "id": "EXACT_POLLACK_five_of_pentacles",
+      "type": "EXACT",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": "Five of Pentacles",
+      "position": "Thoughts",
+      "pages": [
+        268,
+        269,
+        270
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": []
+    },
+    {
+      "id": "EXACT_GREER_five_of_pentacles_UPRIGHT",
+      "type": "EXACT",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Five of Pentacles",
+      "position": "Thoughts",
+      "pages": [
+        180
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": [
+        "0716af0edf3a41a5aecf3fb8"
+      ]
+    },
+    {
+      "id": "EXACT_POLLACK_king_of_cups",
+      "type": "EXACT",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": "King of Cups",
+      "position": "Feelings",
+      "pages": [
+        202,
+        203,
+        204
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": []
+    },
+    {
+      "id": "EXACT_GREER_king_of_cups_UPRIGHT",
+      "type": "EXACT",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "King of Cups",
+      "position": "Feelings",
+      "pages": [
+        208
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": [
+        "776a4e84e8ab11633d056cf8"
+      ]
+    },
+    {
+      "id": "EXACT_POLLACK_four_of_pentacles",
+      "type": "EXACT",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": "Four of Pentacles",
+      "position": "Actions",
+      "pages": [
+        270,
+        271,
+        272
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": []
+    },
+    {
+      "id": "EXACT_GREER_four_of_pentacles_UPRIGHT",
+      "type": "EXACT",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Four of Pentacles",
+      "position": "Actions",
+      "pages": [
+        178
+      ],
+      "orientation": "upright",
+      "evidence_chunk_ids": [
+        "6cc392c84b38cde91ebc6d8f"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_0716af0edf3a41a5aecf3fb8",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Five of Pentacles",
+      "position": "Thoughts",
+      "orientation": "upright",
+      "pages": [
+        180
+      ],
+      "retrieval_methods": [
+        "bm25",
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_POLLACK_78_DEGREES_tarot_page_263_chunk_000",
+      "type": "VECTOR",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": null,
+      "position": "Thoughts",
+      "orientation": "general",
+      "pages": [
+        263
+      ],
+      "retrieval_methods": [
+        "bm25"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_dd3ba7b5106517a4106d67e1",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Five of Pentacles",
+      "position": "Thoughts",
+      "orientation": "reversed",
+      "pages": [
+        180,
+        181,
+        182
+      ],
+      "retrieval_methods": [
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_776a4e84e8ab11633d056cf8",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "King of Cups",
+      "position": "Feelings",
+      "orientation": "upright",
+      "pages": [
+        208
+      ],
+      "retrieval_methods": [
+        "bm25",
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_POLLACK_78_DEGREES_tarot_page_294_chunk_002",
+      "type": "VECTOR",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": null,
+      "position": "Feelings",
+      "orientation": "general",
+      "pages": [
+        294
+      ],
+      "retrieval_methods": [
+        "bm25",
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_4f6f0afaecec081707de61f8",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "King of Cups",
+      "position": "Feelings",
+      "orientation": "reversed",
+      "pages": [
+        208,
+        209
+      ],
+      "retrieval_methods": [
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_6cc392c84b38cde91ebc6d8f",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Four of Pentacles",
+      "position": "Actions",
+      "orientation": "upright",
+      "pages": [
+        178
+      ],
+      "retrieval_methods": [
+        "exact_phrase",
+        "vector"
+      ]
+    },
+    {
+      "id": "VECTOR_POLLACK_78_DEGREES_tarot_page_354_chunk_001",
+      "type": "VECTOR",
+      "source_id": "pollack_78_degrees",
+      "title": "Seventy-Eight Degrees of Wisdom",
+      "author": "Rachel Pollack",
+      "card": null,
+      "position": "Actions",
+      "orientation": "general",
+      "pages": [
+        354
+      ],
+      "retrieval_methods": [
+        "bm25",
+        "exact_phrase"
+      ]
+    },
+    {
+      "id": "VECTOR_GREER_TAROT_REVERSALS_f1f559c2a9785bcc79467c0e",
+      "type": "VECTOR",
+      "source_id": "greer_tarot_reversals",
+      "title": "The Complete Book of Tarot Reversals",
+      "author": "Mary K. Greer",
+      "card": "Four of Pentacles",
+      "position": "Actions",
+      "orientation": "reversed",
+      "pages": [
+        178,
+        179,
+        180
+      ],
+      "retrieval_methods": [
+        "exact_phrase",
+        "vector"
+      ]
+    }
+  ],
+  "tarot_validation": {
+    "unknown_source_ids": [],
+    "exact_sources_not_cited": [
+      "EXACT_POLLACK_five_of_pentacles",
+      "EXACT_GREER_five_of_pentacles_UPRIGHT",
+      "EXACT_POLLACK_king_of_cups",
+      "EXACT_GREER_king_of_cups_UPRIGHT",
+      "EXACT_POLLACK_four_of_pentacles",
+      "EXACT_GREER_four_of_pentacles_UPRIGHT"
+    ]
+  },
+  "yijing_sources": [
+    {
+      "type": "original_hexagram",
+      "name": "观",
+      "pages": [
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216
+      ]
+    },
+    {
+      "type": "moving_line",
+      "name": "观·六三",
+      "pages": [
+        214,
+        215
+      ]
+    },
+    {
+      "type": "changed_hexagram",
+      "name": "渐",
+      "pages": [
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ]
+    }
+  ],
+  "yijing_citation_audit": {
+    "cited_pages": [
+      209,
+      210,
+      211,
+      212,
+      214,
+      215,
+      480,
+      481,
+      482
+    ],
+    "available_pages": [
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487
+    ],
+    "unsupported_pages": [],
+    "passed": true
+  },
+  "fusion_characters": 805,
+  "fusion_cited_pages": [
+    202,
+    210,
+    214,
+    268,
+    270,
+    481
+  ],
+  "fusion_unsupported_pages": [],
+  "startup_errors": 0,
+  "startup_exceptions": 0
+}
